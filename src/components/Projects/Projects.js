@@ -35,7 +35,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={6} className="project-card">
+          {/* <Col md={6} className="project-card">
             <ProjectCard
               imgPath={TripGo}
               title="TripGo"
@@ -51,7 +51,7 @@ function Projects() {
               description="AI-powered travel planner using React.js, TailwindCSS, ShadCN UI, Firebase and AI-powered itinerary generation."
               ghLink="https://github.com/rohit22131/TripPlanner"
             />
-          </Col>
+          </Col> */}
 
         </Row>
       </Container>
