@@ -650,93 +650,115 @@ button:focus {
 /* Projects */
 /* --------- */
 
+/* ============================= */
+/* PROJECT SECTION */
+/* ============================= */
+
 .project-section {
-  padding-top: 150px;
-  padding-bottom: 50px;
+  padding-top: 140px;
+  padding-bottom: 80px;
 }
 
 .project-heading {
-  color: white;
-  font-size: 2.8em;
-  font-weight: 600;
+  color: #ffffff;
+  font-size: 2.7em;
+  font-weight: 700;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  letter-spacing: -0.4px;
 }
 
 .project-subtext {
-  color: #c7c6e8;
-  font-size: 1.2em;
+  color: #bdbbe3;
+  font-size: 1.1em;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
+/* ============================= */
+/* PROJECT CARD */
+/* ============================= */
+
 .project-card {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
-  perspective: 1000px;
 }
 
 .fancy-card {
   position: relative;
   width: 100%;
-  border-radius: 20px;
+  max-width: 520px;
+  border-radius: 16px;
   overflow: hidden;
-  background: rgba(1, 1, 19, 0.26); 
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.103);
-  backdrop-filter: blur(15px); 
-  -webkit-backdrop-filter: blur(15px); 
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background: rgba(10, 10, 32, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55);
+  transition: transform 0.35s ease, box-shadow 0.35s ease,
+    border-color 0.35s ease;
 }
 
 .fancy-card:hover {
-  transform: rotateX(8deg) rotateY(8deg) scale(1.02);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9);
+  transform: translateY(-8px);
+  border-color: rgba(140, 130, 255, 0.4);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.75);
 }
+
+/* ============================= */
+/* IMAGE */
+/* ============================= */
 
 .card-image {
   width: 100%;
-  height: 250px;
+  height: 240px;
   overflow: hidden;
   position: relative;
-  z-index: 2;
 }
 
 .card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
-  border-radius: 10px 10px 0 0;
+  transition: transform 0.45s ease, filter 0.45s ease;
 }
 
 .fancy-card:hover img {
-  transform: scale(1.08);
+  transform: scale(1.05);
+  filter: brightness(0.75);
 }
 
+/* ============================= */
+/* CARD INFO */
+/* ============================= */
+
 .card-info {
-  padding: 20px;
-  backdrop-filter: blur(10px);
-  position: relative;
-  z-index: 1;
+  padding: 22px 24px 26px;
   text-align: center;
 }
 
 .card-title {
-  font-size: 1.5em;
-  color: #fff;
-  font-weight: 500;
+  font-size: 1.45em;
+  color: #ffffff;
+  font-weight: 600;
   margin-bottom: 10px;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.3px;
 }
 
+/* ============================= */
+/* DESCRIPTION (SUBTLE REVEAL) */
+/* ============================= */
+
 .card-description {
-  font-size: 1rem;
-  color: #d1d1e9;
+  font-size: 0.95rem;
+  color: #d2d1f0;
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.5s ease;
+  transform: translateY(12px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  line-height: 1.6;
 }
 
 .fancy-card:hover .card-description {
@@ -744,181 +766,172 @@ button:focus {
   transform: translateY(0);
 }
 
+/* ============================= */
+/* GITHUB BUTTON */
+/* ============================= */
+
 .github-btn {
   display: inline-block;
-  margin-top: 15px;
-  padding: 10px 28px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #482ea5, #3b1fa2);
-  color: white;
+  margin-top: 16px;
+  padding: 9px 22px;
+  border-radius: 8px;
+  background: transparent;
+  color: #bdbbff;
   font-weight: 600;
+  font-size: 0.9rem;
   text-decoration: none;
-  transition: all 0.4s ease;
+  border: 1px solid rgba(189, 187, 255, 0.4);
+  transition: background 0.25s ease, color 0.25s ease,
+    transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .github-btn:hover {
-  background: linear-gradient(135deg, #482ab1, #301a91);
-  transform: scale(1.03);
-  color: white;
+  background: rgba(189, 187, 255, 0.12);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(120, 110, 255, 0.4);
 }
 
-/* --------- */
-/* About */
-/* --------- */
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
 
-.about-section {
-  padding: 100px 0;
-  color: #fff;
-}
-
-.glass-hero {
-  background: rgba(255,255,255,0.04);
-  backdrop-filter: blur(10px);
-  padding: 50px;
-  border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-}
-
-.glass-card {
-  padding: 40px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
-}
-
-.glass-card:hover {
-  transform: scale(1.02);
-}
-
-.modern-avatar {
-  width: 280px;
-  margin: 10px;
-  border-radius: 50%;
-  box-shadow: 0 0 40px rgba(180, 122, 255, 0.4);
-}
-
-.section-heading {
-  margin: 80px 0 40px 0;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.tech-icon-wrapper {
-  background: rgb(1, 2, 20);
-  padding: 25px;
-  border: 1.7px solid rgba(148, 137, 230, 0.637);
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(20, 4, 168, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
-}
-
-.tech-icon-wrapper:hover {
-  transform: scale(1.05);
-  border-color: rgba(128, 115, 230, 0.883);
-  box-shadow: 0 8px 16px rgba(20, 4, 168, 0.25);
-}
-
-.tech-icon-image {
-  width: 70px;
-  height: auto;
-}
-
-@media (max-width: 576px) {
-  .tech-icon-wrapper {
-    padding: 20px;
+@media (max-width: 768px) {
+  .card-image {
+    height: 210px;
   }
-  .tech-icon-image {
-    width: 60px;
+
+  .project-heading {
+    font-size: 2.3em;
   }
 }
+
 
 /* --------- */
 /* Resume */
 /* --------- */
 
+/* ============================= */
+/* Resume Section */
+/* ============================= */
+
 .resume-section {
-  position: relative !important;
-  padding-top: 110px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  position: relative;
+  padding: 120px 0 50px;
+  background-image: var(--section-background-color);
+  color: #ffffff;
 }
 
+/* Container */
 .resume {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  justify-content: center;
+  padding: 50px 0;
 }
 
+/* Columns spacing */
 .resume-left {
-  padding-right: 80px !important;
+  padding-right: 70px;
 }
 
 .resume-right {
-  padding-left: 80px !important;
+  padding-left: 70px;
 }
 
+/* Mobile spacing */
 @media (max-width: 767px) {
-  .resume-left {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
-
+  .resume-left,
   .resume-right {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
+    padding: 0 15px;
   }
 }
-.resume .resume-title {
-  font-size: 2em;
-  font-weight: 700;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 
-.resume .resume-item {
-  padding: 0 0 10px 25px;
-  margin-top: -2px;
-  border-left: 2px solid #4c49a8;
+/* Section Headings */
+.resume .resume-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+  letter-spacing: 0.6px;
   position: relative;
 }
 
-.resume .resume-item .resume-title {
-  line-height: 18px;
-  font-size: 0.9em;
-  background: #3c34795d;
-  padding: 8px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
+.resume .resume-title::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #6c63ff, #9a8cff);
+  bottom: -10px;
+  left: 0;
+  border-radius: 5px;
 }
 
-.resume .resume-item ul {
-  padding-left: 20px;
-  text-align: justify;
+/* Timeline Item */
+.resume .resume-item {
+  position: relative;
+  padding: 0 0 30px 35px;
+  border-left: 2px solid rgba(108, 99, 255, 0.5);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
 }
 
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-  list-style: none;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
+/* Timeline Dot */
 .resume .resume-item::before {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid #4f49a8;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  left: -8px;
+  top: 4px;
+  background: #0f0c29;
+  border: 2px solid #6c63ff;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover Effect */
+.resume .resume-item:hover::before {
+  background: #6c63ff;
+  transform: scale(1.2);
+}
+
+/* Item Title (Date / Role) */
+.resume .resume-item .resume-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #eaeaff;
+  background: rgba(108, 99, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+/* Description List */
+.resume .resume-item ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.resume .resume-item ul li {
+  list-style: none;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #d6d6f2;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+/* Custom Bullet */
+.resume .resume-item ul li::before {
+  content: "▹";
+  position: absolute;
+  left: -18px;
+  color: #6c63ff;
+  font-size: 1rem;
+}
+
+/* Remove extra spacing */
+.resume .resume-item:last-child {
+  margin-bottom: 0;
 }
 
 .like-item {

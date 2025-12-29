@@ -4,6 +4,8 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import TripGo from "../../Assets/Projects/TripGo.png";
 import Foodify from "../../Assets/Projects/Foodify.png"
+import BlogSpace from "../../Assets/Projects/Blog-Space.png"
+import FinTrack from "../../Assets/Projects/FinTrack.png"
 
 function Projects() {
   return (
@@ -35,23 +37,23 @@ function Projects() {
             />
           </Col>
 
-          {/* <Col md={6} className="project-card">
+          <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={TripGo}
-              title="TripGo"
-              description="AI-powered travel planner using React.js, TailwindCSS, ShadCN UI, Firebase and AI-powered itinerary generation."
-              ghLink="https://github.com/rohit22131/TripPlanner"
+              imgPath={BlogSpace}
+              title="Blog Space"
+              description="A blogging platform where users can share their thoughts, ideas, and stories with a vibrant community."
+              ghLink="https://github.com/rohit22131/Blog-Space"
             />
           </Col>
 
           <Col md={6} className="project-card">
             <ProjectCard
-              imgPath={TripGo}
-              title="TripGo"
-              description="AI-powered travel planner using React.js, TailwindCSS, ShadCN UI, Firebase and AI-powered itinerary generation."
-              ghLink="https://github.com/rohit22131/TripPlanner"
+              imgPath={FinTrack}
+              title="FinTrak"
+              description="An expense tracking web application."
+              ghLink="https://github.com/rohit22131/FinTrack"
             />
-          </Col> */}
+          </Col>
 
         </Row>
       </Container>
