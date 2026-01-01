@@ -49,7 +49,7 @@ function Projects() {
           <Col md={6} className="project-card">
             <ProjectCard
               imgPath={FinTrack}
-              title="FinTrak"
+              title="FinTrack"
               description="An expense tracking web application."
               ghLink="https://github.com/rohit22131/FinTrack"
             />
